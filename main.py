@@ -17,7 +17,7 @@ AVIATIONSTACK_API_KEY = os.getenv("AVIATIONSTACK_API_KEY")
 TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
 
 llm = ChatGroq(
-    model="llama-3.3-70b-versatile",
+    model="openai/gpt-oss-120b",
     temperature=0,
 )
 
@@ -265,7 +265,7 @@ def main():
     user_query = (
         # "Plan a 5-day trip from Ahmedabad to Dubai."
         # "Plan a 5-day trip from Ahmedabad to Dubai from August 4"
-        "Plan a 5-day trip from Ahmedabad to Mumbai from July 11"
+        "Plan a 5-day trip from Ahmedabad to Mumbai from November 11"
     )
 
     result = graph.invoke(
